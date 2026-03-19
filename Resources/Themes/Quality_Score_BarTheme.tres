@@ -1,0 +1,19 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://blxvmk2y087uv"]
+
+[ext_resource type="Texture2D" uid="uid://dysrs0f5cl8v8" path="res://icon.svg" id="1_o7vf3"]
+[ext_resource type="Texture2D" uid="uid://ddnpxpbbdnuwj" path="res://Assets/Ingots/copperIngot.png" id="2_rbnit"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ew1xf"]
+texture = ExtResource("1_o7vf3")
+axis_stretch_horizontal = 2
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cg5y4"]
+texture = ExtResource("2_rbnit")
+axis_stretch_horizontal = 2
+
+[resource]
+ProgressBar/colors/font_color = Color(0.94902, 0.94902, 0.94902, 0)
+ProgressBar/colors/font_outline_color = Color(1, 1, 1, 0)
+ProgressBar/font_sizes/font_size = 10
+ProgressBar/styles/background = SubResource("StyleBoxTexture_ew1xf")
+ProgressBar/styles/fill = SubResource("StyleBoxTexture_cg5y4")
