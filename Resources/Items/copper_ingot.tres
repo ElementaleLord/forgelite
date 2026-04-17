@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://dhsp1i5pb42ji"]
+[gd_resource type="Resource" script_class="InventoryItem" format=3 uid="uid://dhsp1i5pb42ji"]
 
 [ext_resource type="Script" uid="uid://142cwcufxgsv" path="res://inventory/inventory_item.gd" id="1_cuen1"]
-[ext_resource type="Texture2D" uid="uid://ddnpxpbbdnuwj" path="res://Assets/Ingots/copperIngot.png" id="2_f5uf3"]
+[ext_resource type="Texture2D" uid="uid://ddnpxpbbdnuwj" path="res://sprites/Ingots/copperIngot.png" id="2_f5uf3"]
 
 [resource]
 script = ExtResource("1_cuen1")

@@ -1,7 +1,7 @@
-[gd_resource type="Theme" load_steps=5 format=3 uid="uid://bui54w3hgf63m"]
+[gd_resource type="Theme" format=3 uid="uid://bui54w3hgf63m"]
 
 [ext_resource type="Texture2D" uid="uid://dysrs0f5cl8v8" path="res://icon.svg" id="1_py71w"]
-[ext_resource type="Texture2D" uid="uid://ddnpxpbbdnuwj" path="res://Assets/Ingots/copperIngot.png" id="2_wpmrm"]
+[ext_resource type="Texture2D" uid="uid://ddnpxpbbdnuwj" path="res://sprites/Ingots/copperIngot.png" id="2_wpmrm"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ajatl"]
 texture = ExtResource("1_py71w")

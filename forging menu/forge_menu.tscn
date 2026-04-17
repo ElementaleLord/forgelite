@@ -1,23 +1,23 @@
-[gd_scene load_steps=14 format=3 uid="uid://o7bkpg5m38ic"]
+[gd_scene format=3 uid="uid://o7bkpg5m38ic"]
 
 [ext_resource type="Script" uid="uid://cefoi7n8abo1d" path="res://forging menu/forge_ui.gd" id="1_typ5e"]
 [ext_resource type="Texture2D" uid="uid://dysrs0f5cl8v8" path="res://icon.svg" id="2_1abwj"]
-[ext_resource type="Theme" uid="uid://blxvmk2y087uv" path="res://Resources/Themes/Quality_Score_BarTheme.tres" id="3_dqker"]
-[ext_resource type="Theme" uid="uid://bui54w3hgf63m" path="res://Resources/Themes/ForgingBar.tres" id="4_dh2tb"]
-[ext_resource type="Theme" uid="uid://cuwfq7heqbo72" path="res://Resources/Themes/PatternTheme.tres" id="5_ffql6"]
-[ext_resource type="Texture2D" uid="uid://s4bqnvclnqis" path="res://Assets/HitPattern/ForgeLite-magentaPattern.png" id="6_dh2tb"]
-[ext_resource type="Texture2D" uid="uid://crq13eir202pu" path="res://Assets/HitPattern/ForgeLite-cyanPattern.png" id="6_dqker"]
-[ext_resource type="Texture2D" uid="uid://2seinst4r3f2" path="res://Assets/HitPattern/ForgeLite-yellowPattern.png" id="7_dh2tb"]
-[ext_resource type="Texture2D" uid="uid://bjbo3cqmny03p" path="res://Assets/HitPattern/ForgeLite-darkgrayPattern.png" id="8_ffql6"]
-[ext_resource type="Texture2D" uid="uid://bs0uvnpkg7jl1" path="res://Assets/HitPattern/ForgeLite-lightgrayPattern.png" id="9_kkjln"]
-[ext_resource type="Texture2D" uid="uid://dim4ybjkkgvn2" path="res://Assets/HitPattern/ForgeLite-redPattern.png" id="10_ii8rk"]
-[ext_resource type="Texture2D" uid="uid://j4vba5xj5od3" path="res://Assets/HitPattern/ForgeLite-bluePattern.png" id="11_fka4b"]
-[ext_resource type="Texture2D" uid="uid://dqsqlj1tvcc1v" path="res://Assets/HitPattern/ForgeLite-greenPattern.png" id="12_lspnd"]
+[ext_resource type="Theme" uid="uid://blxvmk2y087uv" path="res://resources/Themes/Quality_Score_BarTheme.tres" id="3_dqker"]
+[ext_resource type="Theme" uid="uid://bui54w3hgf63m" path="res://resources/Themes/ForgingBar.tres" id="4_dh2tb"]
+[ext_resource type="Theme" uid="uid://cuwfq7heqbo72" path="res://resources/Themes/PatternTheme.tres" id="5_ffql6"]
+[ext_resource type="Texture2D" uid="uid://s4bqnvclnqis" path="res://sprites/HitPattern/ForgeLite-magentaPattern.png" id="6_dh2tb"]
+[ext_resource type="Texture2D" uid="uid://crq13eir202pu" path="res://sprites/HitPattern/ForgeLite-cyanPattern.png" id="6_dqker"]
+[ext_resource type="Texture2D" uid="uid://2seinst4r3f2" path="res://sprites/HitPattern/ForgeLite-yellowPattern.png" id="7_dh2tb"]
+[ext_resource type="Texture2D" uid="uid://bjbo3cqmny03p" path="res://sprites/HitPattern/ForgeLite-darkgrayPattern.png" id="8_ffql6"]
+[ext_resource type="Texture2D" uid="uid://bs0uvnpkg7jl1" path="res://sprites/HitPattern/ForgeLite-lightgrayPattern.png" id="9_kkjln"]
+[ext_resource type="Texture2D" uid="uid://dim4ybjkkgvn2" path="res://sprites/HitPattern/ForgeLite-redPattern.png" id="10_ii8rk"]
+[ext_resource type="Texture2D" uid="uid://j4vba5xj5od3" path="res://sprites/HitPattern/ForgeLite-bluePattern.png" id="11_fka4b"]
+[ext_resource type="Texture2D" uid="uid://dqsqlj1tvcc1v" path="res://sprites/HitPattern/ForgeLite-greenPattern.png" id="12_lspnd"]
 
-[node name="ForgeUI" type="CanvasLayer"]
+[node name="ForgeUI" type="CanvasLayer" unique_id=801848244]
 script = ExtResource("1_typ5e")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1116378152]
 self_modulate = Color(1, 0, 0, 1)
 custom_minimum_size = Vector2(1000, 600)
 anchors_preset = 8
@@ -33,7 +33,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_1abwj")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="TextureRect"]
+[node name="HBoxContainer" type="HBoxContainer" parent="TextureRect" unique_id=1663607826]
 custom_minimum_size = Vector2(1000, 580)
 layout_mode = 1
 anchors_preset = 8
@@ -48,125 +48,125 @@ offset_bottom = 300.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="InventoryTexture" type="TextureRect" parent="TextureRect/HBoxContainer"]
+[node name="InventoryTexture" type="TextureRect" parent="TextureRect/HBoxContainer" unique_id=1923018548]
 self_modulate = Color(0, 0, 1, 1)
 custom_minimum_size = Vector2(220, 600)
 layout_mode = 2
 texture = ExtResource("2_1abwj")
 
-[node name="InventorySub" type="BoxContainer" parent="TextureRect/HBoxContainer/InventoryTexture"]
+[node name="InventorySub" type="BoxContainer" parent="TextureRect/HBoxContainer/InventoryTexture" unique_id=2047934689]
 custom_minimum_size = Vector2(220, 580)
-layout_mode = 2
+layout_mode = 0
 offset_left = 4.0
 offset_right = 224.0
 offset_bottom = 580.0
 
-[node name="ForgeTexture" type="TextureRect" parent="TextureRect/HBoxContainer"]
+[node name="ForgeTexture" type="TextureRect" parent="TextureRect/HBoxContainer" unique_id=1427294179]
 self_modulate = Color(0, 1, 0, 1)
 custom_minimum_size = Vector2(780, 600)
 layout_mode = 2
 texture = ExtResource("2_1abwj")
 
-[node name="ForgingSub" type="VBoxContainer" parent="TextureRect/HBoxContainer/ForgeTexture"]
+[node name="ForgingSub" type="VBoxContainer" parent="TextureRect/HBoxContainer/ForgeTexture" unique_id=2105726386]
 custom_minimum_size = Vector2(780, 580)
-layout_mode = 2
+layout_mode = 0
 offset_left = 4.0
 offset_right = 784.0
 offset_bottom = 604.0
 
-[node name="Control3" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub"]
+[node name="Control3" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub" unique_id=1391694118]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 
-[node name="PlayerHits" type="HBoxContainer" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub"]
+[node name="PlayerHits" type="HBoxContainer" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub" unique_id=1782284955]
 custom_minimum_size = Vector2(560, 80)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="Control" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits"]
+[node name="Control" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits" unique_id=2016962406]
 custom_minimum_size = Vector2(120, 80)
 layout_mode = 2
 
-[node name="FirstLastHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits"]
+[node name="FirstLastHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits" unique_id=1492212969]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="Control2" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits"]
+[node name="Control2" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits" unique_id=1540937332]
 custom_minimum_size = Vector2(20, 80)
 layout_mode = 2
 
-[node name="SecondLastHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits"]
+[node name="SecondLastHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits" unique_id=720032269]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="Control3" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits"]
+[node name="Control3" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits" unique_id=194741532]
 custom_minimum_size = Vector2(20, 80)
 layout_mode = 2
 
-[node name="ThirdLastHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits"]
+[node name="ThirdLastHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits" unique_id=959043543]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="Control4" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits"]
+[node name="Control4" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/PlayerHits" unique_id=759351051]
 custom_minimum_size = Vector2(120, 80)
 layout_mode = 2
 
-[node name="TargetPattern" type="HBoxContainer" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub"]
+[node name="TargetPattern" type="HBoxContainer" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub" unique_id=952256906]
 custom_minimum_size = Vector2(560, 80)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="Control" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern"]
+[node name="Control" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern" unique_id=893994858]
 custom_minimum_size = Vector2(120, 80)
 layout_mode = 2
 
-[node name="FirstPatternHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern"]
+[node name="FirstPatternHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern" unique_id=177517748]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Control2" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern"]
+[node name="Control2" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern" unique_id=156963153]
 custom_minimum_size = Vector2(20, 80)
 layout_mode = 2
 
-[node name="SecondPatternHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern"]
+[node name="SecondPatternHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern" unique_id=53029060]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="Control3" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern"]
+[node name="Control3" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern" unique_id=1996558167]
 custom_minimum_size = Vector2(20, 80)
 layout_mode = 2
 
-[node name="ThirdPatternHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern"]
+[node name="ThirdPatternHit" type="TextureRect" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern" unique_id=594943948]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 
-[node name="Control4" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern"]
+[node name="Control4" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/TargetPattern" unique_id=208630628]
 custom_minimum_size = Vector2(120, 80)
 layout_mode = 2
 
-[node name="Control" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub"]
+[node name="Control" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub" unique_id=629367718]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 
-[node name="ForgingInfo" type="VBoxContainer" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub"]
+[node name="ForgingInfo" type="VBoxContainer" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub" unique_id=1761650775]
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="TargetScore" type="ProgressBar" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ForgingInfo"]
+[node name="TargetScore" type="ProgressBar" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ForgingInfo" unique_id=270149801]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(750, 20)
 layout_mode = 2
 theme = ExtResource("3_dqker")
 value = 25.0
 
-[node name="ForgingBar" type="ProgressBar" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ForgingInfo"]
+[node name="ForgingBar" type="ProgressBar" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ForgingInfo" unique_id=1060055714]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(750, 40)
 layout_mode = 2
@@ -176,27 +176,27 @@ theme = ExtResource("4_dh2tb")
 step = 1.0
 rounded = true
 
-[node name="QualityScore" type="ProgressBar" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ForgingInfo"]
+[node name="QualityScore" type="ProgressBar" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ForgingInfo" unique_id=1931553575]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(750, 20)
 layout_mode = 2
 theme = ExtResource("3_dqker")
 value = 100.0
 
-[node name="Control2" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub"]
+[node name="Control2" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub" unique_id=1344606078]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 
-[node name="ButtonCointainer" type="HBoxContainer" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub"]
+[node name="ButtonCointainer" type="HBoxContainer" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub" unique_id=71375487]
 custom_minimum_size = Vector2(560, 80)
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="Control" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer"]
+[node name="Control" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer" unique_id=981300193]
 custom_minimum_size = Vector2(40, 80)
 layout_mode = 2
 
-[node name="MagentaHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer"]
+[node name="MagentaHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer" unique_id=1724989672]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
@@ -204,7 +204,7 @@ theme = ExtResource("5_ffql6")
 icon = ExtResource("6_dh2tb")
 icon_alignment = 1
 
-[node name="CyanHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer"]
+[node name="CyanHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer" unique_id=748971142]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
@@ -212,7 +212,7 @@ theme = ExtResource("5_ffql6")
 icon = ExtResource("6_dqker")
 icon_alignment = 1
 
-[node name="YellowHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer"]
+[node name="YellowHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer" unique_id=1655197656]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
@@ -220,7 +220,7 @@ theme = ExtResource("5_ffql6")
 icon = ExtResource("7_dh2tb")
 icon_alignment = 1
 
-[node name="DarkgrayHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer"]
+[node name="DarkgrayHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer" unique_id=668473323]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
@@ -228,13 +228,13 @@ theme = ExtResource("5_ffql6")
 icon = ExtResource("8_ffql6")
 icon_alignment = 1
 
-[node name="LightgrayHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer"]
+[node name="LightgrayHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer" unique_id=6982113]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 icon = ExtResource("9_kkjln")
 
-[node name="RedHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer"]
+[node name="RedHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer" unique_id=1006634461]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
@@ -242,7 +242,7 @@ theme = ExtResource("5_ffql6")
 icon = ExtResource("10_ii8rk")
 icon_alignment = 1
 
-[node name="BlueHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer"]
+[node name="BlueHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer" unique_id=907373979]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
@@ -250,7 +250,7 @@ theme = ExtResource("5_ffql6")
 icon = ExtResource("11_fka4b")
 icon_alignment = 1
 
-[node name="GreenHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer"]
+[node name="GreenHit" type="Button" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer" unique_id=1127728129]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
@@ -258,11 +258,11 @@ theme = ExtResource("5_ffql6")
 icon = ExtResource("12_lspnd")
 icon_alignment = 1
 
-[node name="Control2" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer"]
+[node name="Control2" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub/ButtonCointainer" unique_id=342953477]
 custom_minimum_size = Vector2(40, 80)
 layout_mode = 2
 
-[node name="Control4" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub"]
+[node name="Control4" type="Control" parent="TextureRect/HBoxContainer/ForgeTexture/ForgingSub" unique_id=233315656]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 

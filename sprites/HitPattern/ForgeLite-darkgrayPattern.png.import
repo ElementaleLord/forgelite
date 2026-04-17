@@ -2,22 +2,24 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://j4vba5xj5od3"
-path="res://.godot/imported/ForgeLite-bluePattern.png-126adbfc838a68b7d0ffdd96a6143b6f.ctex"
+uid="uid://bjbo3cqmny03p"
+path="res://.godot/imported/ForgeLite-darkgrayPattern.png-cc99b27e3ef5f1dc0349413fa851f150.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HitPattern/ForgeLite-bluePattern.png"
-dest_files=["res://.godot/imported/ForgeLite-bluePattern.png-126adbfc838a68b7d0ffdd96a6143b6f.ctex"]
+source_file="res://sprites/HitPattern/ForgeLite-darkgrayPattern.png"
+dest_files=["res://.godot/imported/ForgeLite-darkgrayPattern.png-cc99b27e3ef5f1dc0349413fa851f150.ctex"]
 
 [params]
 
 compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -25,6 +27,10 @@ mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

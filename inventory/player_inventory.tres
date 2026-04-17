@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Inventory" load_steps=4 format=3 uid="uid://cvm424ksmhml2"]
+[gd_resource type="Resource" script_class="Inventory" format=3 uid="uid://cvm424ksmhml2"]
 
 [ext_resource type="Script" uid="uid://142cwcufxgsv" path="res://inventory/inventory_item.gd" id="1_ptr4k"]
-[ext_resource type="Resource" uid="uid://dhsp1i5pb42ji" path="res://Resources/Items/copper_ingot.tres" id="2_fi1x0"]
+[ext_resource type="Resource" uid="uid://dhsp1i5pb42ji" path="res://resources/Items/copper_ingot.tres" id="2_fi1x0"]
 [ext_resource type="Script" uid="uid://cs1v0hqea7yc0" path="res://inventory/inventory.gd" id="3_65xq6"]
 
 [resource]
